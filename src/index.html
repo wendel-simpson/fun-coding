@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+    <script>
+      class Rectangle {
+        constructor(height, width) {
+          this.width = width
+          this.height = height
+
+          console.log({ height: this.height, wdith: this.width })
+        }
+
+        getHeight() {
+          return this.height
+        }
+
+        getWidth() {
+          return this.width
+        }
+
+        calculateArea() {
+          this.area = this.getHeight() * this.getWidth()
+        }
+
+        getArea() {
+          return this.area
+        }
+      }
+
+      const rect = new Rectangle(5, 12)
+      console.log(rect.getArea())
+      console.log(rect.calculateArea())
+      console.log(rect.getArea())
+      console.log(rect.getHeight())
+    </script>
+  </head>
+  <body>
+    <p>
+      This is an . Anything in the <strong>body</strong> tag will appear on the
+      page, just like this <strong>p</strong> tag and its contents.
+    </p>
+  </body>
+</html>
